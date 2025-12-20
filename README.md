@@ -1,2 +1,7 @@
 # rafaelmelchert88.github.io
-Project of my personal webpage.
+
+Personal website built by hand using HTML, CSS, and JavaScript.
+
+A place for notes, quotes, and independent projects.
+
+Live at: https://rafaelmelchert88.github.io
