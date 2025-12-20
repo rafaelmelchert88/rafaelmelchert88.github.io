@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <title>Meditations - Notes</title>
+    <meta name="description" content="Personal notes and highlights from Meditations by Marcus Aurelius.">
+    <link rel="canonical" href="https://www.rafaelmelchert88.github.io/notes/meditations.html">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
+</head>
+<body>
+    <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-top">
+        <div class="title"><a href="/index.html">Rafael Melchert</a></div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
+        <div class="links nav-links">
+          <a href="/about.html">About</a>
+          <a href="/values.html">Values</a>
+          <a href="/quotes.html">Quotes</a>
+          <a href="/notes.html">Notes</a>
+          <a href="/blog.html">Blog</a>
+        </div>
+        <!-- <div class="spacer"></div> -->
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" rel="noopener noreferrer" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.github.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <!-- <a href="https://www.twitter.com/rafaelmelchert" target="_blank" rel="noopener noreferrer sponsored" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+        </div>
+      </div>
+
+      <div class="navbar-bottom">
+        <!-- <div class="language-switcher">
+          <a href="/index.html">🇧🇷 PT</a> |
+          <a href="/index.en.html">🇬🇧 EN</a> |
+          <a href="/index.fr.html">🇫🇷 FR</a>
+        </div>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div> -->
+      </div>
+    </nav>
+  </header>
+
+    <div class="hero">
+        <h1 class="page-title">Meditations Notes</h1>
+    </div>
+
+    <div class="content">
+        <h2>Meditations</h2>
+        
+        <p>Author: Marcus Aurelius</p>
+        
+        <p>"Our life is what our thoughts make it"</p>
+        <p>"A wrongdoer is often a man who has left something undone, not always one who has done something."</p>
+        <p>"If, at some point in your life, you should come across anything better than justice, prudence, self-control, courage - than a mind satisfied that it has succeeded in enabling you to act rationally, and satisfied to accept what's beyond its control - if you find anything better than that, embrace it without reservations - it must be an extraordinary thing indeed - and enjoy it to the full."</p>
+        <p>"Your ability to control your thoughts - treat it with respect. It's what makes thoughtfulness possible, and affection for other people, and submission to the divine."</p>
+        <p>"No one can keep you from living as your nature requires. Nothing can happen to you that is not required by Nature."</p>
+        <p>"Self-contraction: the mind's requirements are satisfied by doing what whe should, and by the calm it brings to us."</p>
+        <p>"Dig deep within yourself, for there is a fountain of goodness ever ready to flow if you will keep digging."</p>
+        <p>"Stick to what's in front of you - idea, action, utterance."</p>
+        <p>"You have to assemble your life yourself - action by action. And be satisfied if each one achieves its goal, as far as it can. No one can keep that from happening."</p>
+        <p>"Whatever happens to you has been waiting to happen since the beggining of time. The twining strands of fate wove both of them together: you own exixtence and the things that happen to you."</p>
+        <p>"The responsability is all yours; no one can stop you from being honest or straightforward."</p>
+        <p>"Learn to as of all questions, 'Why are they doing that?' Starting with you own."</p>
+        <p>"What is your vocation? To be a good person."</p>
+        <section class="book-reference">
+          <p>
+              <em>If you'd like to explore the book in full:</em><br>
+              <a
+              href="https://www.amazon.com/dp/B00KPRWAX8?tag=rafaelmelchert88-20"
+              target="_blank"
+              rel="noopener sponsored"
+              >
+              Meditations by Marcus Aurelius on Amazon
+              </a>
+          </p>
+        </section>
+        <p class="affiliate-note">
+        This page may contain affiliate links. If you choose to use them, it supports this project at no extra cost to you.<br>
+        Disclosure: As an Amazon Associate, I earn from qualifying purchases.
+        </p>
+    </div>
+
+    <div class="footer">
+        &copy; <span id="year"></span> Rafael Melchert. All rights reserved.
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        function toggleMenu() {
+            const links = document.querySelector('.navbar .links');
+            links.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
+
+</body>
+</html>
