@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <title>Values</title>
+    <meta name="description" content="Explore the core values that guide Rafael Melchert's life and work.">
+    <link rel="canonical" href="https://www.rafaelmelchert88.github.io/values.html">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-top">
+        <div class="title"><a href="index.html">Rafael Melchert</a></div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
+        <div class="links nav-links">
+          <a href="about.html">About</a>
+          <a href="values.html">Values</a>
+          <a href="quotes.html">Quotes</a>
+          <a href="notes.html">Notes</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <!-- <div class="spacer"></div> -->
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" rel="noopener noreferrer" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.github.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <!-- <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+        </div>
+      </div>
+
+      <div class="navbar-bottom">
+        <!-- <div class="language-switcher">
+          <a href="index.html">🇧🇷 PT</a> |
+          <a href="index.en.html">🇬🇧 EN</a> |
+          <a href="index.fr.html">🇫🇷 FR</a>
+        </div>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div> -->
+      </div>
+    </nav>
+  </header>
+  
+    <div class="hero">
+        <h1 class="page-title">Values</h1>
+    </div>
+    <div class="content">
+      <p>Here are some values that I follow, it’s based on the Stoicism philosophy. There is a good article about it, The Highest Good: An Introduction To The 4 Stoic Virtues. I’m not used to the word temperance, a good synonym is moderation, I decided to divide in discipline and self-control. I got the definitions from Oxford Languages.</p>
+      <ul>
+        <li>Discipline</li>
+        <ul>
+          <li>The controled behaviour resulting from such training.</li>
+          <li>Activity that provides mental or physical training.</li>
+          <li>A system of rules of conduct</li>
+        </ul>
+          <li>Self-Control</li>
+        <ul>
+          <li>The ability to contorl one self, in particular one's emotions and desires, especially in difficult situations</li>
+        </ul>
+          <li>Justice</li>
+        <ul>
+          <li>Just behaviour or treatment</li>
+          <li>The quality of being fair and reasonable</li>
+        </ul>
+        <li>Courage</li>
+        <ul>
+          <li>The ability to do something that frightens one, bravery.</li>
+          <li>Strength in the face of pain or grief.</li>
+        </ul>
+        <li>Wisdom</li>
+        <ul>
+          <li>The quality of having experience, knowledge, and good judgement, the quality of being wise.</li>
+          <li>The fact of being based on sensible or wise thinking</li>
+          <li>The body of knowledge and experience that develops within a specified society or period.</li>
+        </ul>
+      </ul>
+      <div class="video-container">
+        <iframe
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/R9OCA6UFE-0"
+          title="The philosophy of Stoicism - Massimo Pigliucci"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="footer">
+        &copy; <span id="year"></span> Rafael Melchert. All rights reserved.
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        function toggleMenu() {
+            const links = document.querySelector('.navbar .links');
+            links.classList.toggle('active');
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
+</body>
+</html>

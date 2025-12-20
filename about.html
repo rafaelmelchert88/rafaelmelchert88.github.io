@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <title>About</title>
+    <meta name="description" content="Learn more about Rafael Melchert, his background, interests, and the purpose of this website.">
+    <link rel="canonical" href="https://www.rafaelmelchert88.github.io/about.html">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="navbar-top">
+        <div class="title"><a href="index.html">Rafael Melchert</a></div>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</div>
+        <div class="links nav-links">
+          <a href="about.html">About</a>
+          <a href="values.html">Values</a>
+          <a href="quotes.html">Quotes</a>
+          <a href="notes.html">Notes</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <!-- <div class="spacer"></div> -->
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" rel="noopener noreferrer" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.github.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <!-- <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+        </div>
+      </div>
+
+      <div class="navbar-bottom">
+        <!-- <div class="language-switcher">
+          <a href="index.html">🇧🇷 PT</a> |
+          <a href="index.en.html">🇬🇧 EN</a> |
+          <a href="index.fr.html">🇫🇷 FR</a>
+        </div>
+        <div class="social-icons" aria-label="Social links">
+          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.strava.com/athletes/79145788" target="_blank" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+          <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div> -->
+      </div>
+    </nav>
+  </header>
+    
+    <div class="content">
+        <img src="/assets/images/IMG_5609.jpg" alt="Man wearing a black cap with the word ALOHA, sunglasses, and a necklace with a stone pendant, sitting shirtless outdoors under a shaded structure; tattoo visible on his right shoulder and arm; background includes trees, blue sky, and a white shirt hanging inside a building; relaxed and casual atmosphere" class="profile-pic">
+        <div class="bio">
+            <p>
+                Hello there! My name is Rafael Melchert from Florianópolis, in Santa Catarina, Brazil.
+            </p>
+            <p>
+                Since I was little, figuring out how things operate fascinated me. Whether it's technology, books or self improvement. I delve into the reasons behind everything always eager to learn and evolve.
+            </p>
+            <p>
+                When it comes to solving problems, I prefer to keep things simple. Working towards solutions that are easy to execute and adapt to different situations. While maintaining high performance levels.
+            </p>
+            <p>
+                When I'm not working, I enjoy spending time outdoors or getting lost in a good book. Stoic philosophy resonates with me. I aim to apply it's principles of discipline, resilience and mindfulness to my life.
+            </p>
+            <p>
+                Lately I've been putting together this website. Where I share my stories and connect with others to explore concepts together. I'm always excited to collaborate on new projects. To have meaningful conversations about ideas that inspire growth.
+            </p>
+            <p>
+                Feel free to reach out. I'm always open to new opportunities and interesting discussions.
+            </p>
+        </div>
+        <section class="support-project">
+          <h2>Support this project</h2>
+
+          <p>
+            I build this website, write, and document the projects you see here on my own.<br>
+            If something you read here resonates with you and you'd like to support,<br>
+            I appreciate it.
+          </p>
+
+          <div class="support-buttons">
+            <a
+              href="https://www.buymeacoffee.com/rafaelmelchert88"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              class="support-btn primary"
+            >
+              Buy me a coffee
+            </a>
+          </div>
+        </section>
+    </div>
+    <div class="footer">
+        &copy; <span id="year"></span> Rafael Melchert. All rights reserved.
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      function toggleMenu() {
+        const links = document.querySelector('.navbar .links');
+        links.classList.toggle('active');
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
+</body>
+</html>
