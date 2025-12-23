@@ -164,6 +164,25 @@ a:hover {
     }
 }
 
+@media (max-width: 400px) {
+    .navbar-top {
+        padding: 0.5rem 0.75rem;
+    }
+    .title a {
+        font-size: 1.2rem;
+    }
+    .social-icons a.github { display: none; }
+    .full-screen .main-quote {
+        font-size: 1.2rem;
+    }
+    .hero .page-title {
+        font-size: 1.5rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
 /* Specific Styles for About Page */
 .profile-pic {
     width: 50%;
