@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-    <title>Quotes</title>
-    <meta name="description" content="A collection of favorite quotes curated by Rafael Melchert.">
+    <title>Favorite Quotes | Rafael Melchert</title>
+    <meta name="description" content="A personal collection of favorite quotes on growth, creativity, philosophy, work, and living intentionally.">
     <link rel="canonical" href="https://rafaelmelchert88.github.io/quotes.html">
+    <meta name="author" content="Rafael Melchert">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rafael Melchert">
+    <meta property="og:title" content="Favorite Quotes">
+    <meta property="og:description" content="A personal collection of quotes on growth, creativity, philosophy, work, and intentional living.">
+    <meta property="og:url" content="https://rafaelmelchert88.github.io/quotes.html">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Favorite Quotes">
+    <meta name="twitter:description" content="A personal collection of quotes on growth, creativity, philosophy, work, and intentional living.">
+    
     <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
@@ -55,10 +68,18 @@
     </div>
 
     <div class="content">
-        <p>Here are a few quotes that I've written down on stories that I've read online, mostly from Benjamin Hardy, Srinvas Rao from Unmistakable Creative, Nicolas Cole from Digital Press, and lately Ryan Holiday from Daily Stoic.</p>
+        <p>
+            A personal collection of passages I have saved from books, essays, and writers
+            whose work has shaped how I think about growth, creativity, philosophy, and life.
+        </p>
         
         <!-- Search bar -->
-        <input type="text" id="searchInput" placeholder="Search quotes or authors..." style="width:100%; padding:10px; margin-bottom:20px; font-size:16px;">
+        <label for="searchInput">Search quotes</label>
+        <input 
+            type="search" 
+            id="searchInput" 
+            placeholder="Search quotes or authors..." 
+            style="width:100%; padding:10px; margin-bottom:20px; font-size:16px;">
 
         <!-- Scroll-to-Top Button -->
         <button id="scrollTopBtn" title="Go to top">↑</button>
@@ -90,7 +111,7 @@
 
                     // Book part with optional affiliate link
                     const bookPart = quote.book ? (quote.affiliate_link ? 
-                        `<a href="${quote.affiliate_link}" target="_blank" rel="noopener noreferrer sponsored"><em>${quote.book}</em></a>` : 
+                        `<a href="${quote.affiliate_link}" target="_blank" rel="noopener noreferrer "><em>${quote.book}</em></a>` : 
                         `<em>${quote.book}</em>`) : '';
 
                     // Author URL link from JSON
@@ -128,6 +149,21 @@
 
         document.addEventListener('DOMContentLoaded', loadQuotes);
     </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Favorite Quotes",
+        "description": "A personal collection of favorite quotes on growth, creativity, philosophy, work, and intentional living.",
+        "url": "https://rafaelmelchert88.github.io/quotes.html",
+        "author": {
+            "@type": "Person",
+            "name": "Rafael Melchert"
+        }
+    }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
 </body>
 </html>
