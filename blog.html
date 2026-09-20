@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-    <title>Blog</title>
-    <meta name="description" content="Read the latest blog posts by Rafael Melchert on various topics.">
+    <title>Personal Blog | Rafael Melchert</title>
+    <meta name="description" content="Personal reflections by Rafael Melchert on travel, self-discovery, learning, and building a more intentional life.">
     <link rel="canonical" href="https://rafaelmelchert88.github.io/blog.html">
+    <meta name="author" content="Rafael Melchert">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rafael Melchert">
+    <meta property="og:title" content="Personal Blog">
+    <meta property="og:description" content="Personal reflections on travel, self-discovery, learning, and intentional living.">
+    <meta property="og:url" content="https://rafaelmelchert88.github.io/blog.html">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Personal Blog">
+    <meta name="twitter:description" content="Personal reflections on travel, self-discovery, learning, and intentional living.">
+    
     <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
@@ -53,27 +66,43 @@
     <div class="hero">
         <h1 class="page-title">Blog</h1>
     </div>
-    <div class="content">
-      <div class="post-summary">
-        <h2><a href="/blog/a-quiet-day-in-bali-changed-how-i-see-myself.html">A Quiet Day in Bali Changed How I See Myself</a></h2>
-        <p class="post-date">Posted on July 20, 2026</p>
+    <main class="content">
+      <p>
+        Personal reflections on travel, self-discovery, learning, and the experiences
+        that shape how I live and work.
+      </p>
+      <article class="post-summary">
+        <h2>
+          <a href="/blog/a-quiet-day-in-bali-changed-how-i-see-myself.html">
+            A Quiet Day in Bali Changed How I See Myself
+          </a>
+        </h2>
+        <time class="post-date" datetime="2026-07-20">Posted on July 20, 2026</time>
         <p class="post-excerpt">A day dedicated to introspection and self-discovery.</p>
-      </div>
+      </article>
 
-      <div class="post-summary">
-        <h2><a href="/blog/using-astrology-as-a-tool-for-self-reflection.html">Using Astrology as a Tool for Self-Reflection</a></h2>
-        <p class="post-date">Posted on January 6, 2026</p>
-        <p class="post-excerpt">Finding language for parts of myself I hadn't noticed</p>
-      </div>  
+      <article class="post-summary">
+        <h2>
+          <a href="/blog/using-astrology-as-a-tool-for-self-reflection.html">
+            Using Astrology as a Tool for Self-Reflection
+          </a>
+        </h2>
+        <time class="post-date" datetime="2026-01-06">Posted on January 6, 2026</time>
+        <p class="post-excerpt">Finding language for parts of myself I hadn't noticed.</p>
+      </article>  
       
-      <div class="post-summary">
-        <h2><a href="/blog/building-a-personal-website-by-hand.html">Building a Personal Website by Hand</a></h2>
-        <p class="post-date">Posted on December 26, 2025</p>
+      <article class="post-summary">
+        <h2>
+          <a href="/blog/building-a-personal-website-by-hand.html">
+            Building a Personal Website by Hand
+          </a>
+        </h2>
+        <time class="post-date" datetime="2025-12-26">Posted on December 26, 2025</time>
         <p class="post-excerpt">A quiet place on the internet.</p>
-      </div>
+      </article>
         
       <!-- Add more blog posts as needed -->
-    </div>
+    </main>
 
     <div class="footer">
         &copy; <span id="year"></span> Rafael Melchert. All rights reserved.
@@ -85,6 +114,41 @@
         links.classList.toggle('active');
       }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Rafael Melchert's Blog",
+      "description": "Personal reflections on travel, self-discovery, learning, and intentional living.",
+      "url": "https://rafaelmelchert88.github.io/blog.html",
+      "author": {
+        "@type": "Person",
+        "name": "Rafael Melchert"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "A Quiet Day in Bali Changed How I See Myself",
+          "datePublished": "2026-07-20",
+          "url": "https://rafaelmelchert88.github.io/blog/a-quiet-day-in-bali-changed-how-i-see-myself.html"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Using Astrology as a Tool for Self-Reflection",
+          "datePublished": "2026-01-06",
+          "url": "https://rafaelmelchert88.github.io/blog/using-astrology-as-a-tool-for-self-reflection.html"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Building a Personal Website by Hand",
+          "datePublished": "2025-12-26",
+          "url": "https://rafaelmelchert88.github.io/blog/building-a-personal-website-by-hand.html"
+        }
+      ]
+    }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
 </body>
 </html>
