@@ -35,11 +35,17 @@
           <a href="/">Rafael Melchert</a>
         </div>
 
-        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">
-          &#9776;
-        </div>
+        <button
+          class="menu-icon"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span aria-hidden="true">&#9776;</span>
+        </button>
 
-        <div class="links nav-links">
+        <div id="primary-navigation" class="links nav-links">
           <a href="/about.html">About</a>
           <a href="/values.html">Values</a>
           <a href="/quotes.html">Quotes</a>
@@ -125,11 +131,34 @@
     </div>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        function toggleMenu() {
-            const links = document.querySelector('.navbar .links');
-            links.classList.toggle('active');
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const menuButton = document.querySelector(".menu-icon");
+        const navLinks = document.getElementById("primary-navigation");
+
+        function setMenuState(isOpen) {
+          navLinks.classList.toggle("active", isOpen);
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
         }
+
+        menuButton.addEventListener("click", () => {
+          const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+          setMenuState(!isOpen);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            setMenuState(false);
+            menuButton.focus();
+          }
+        });
+
+        navLinks.addEventListener("click", (event) => {
+          if (event.target.matches("a")) {
+            setMenuState(false);
+          }
+        });
     </script>
 
     <script type="application/ld+json">
