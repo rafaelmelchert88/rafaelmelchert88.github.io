@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Essential metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- SEO -->
     <title>Notes on Flow</title>
     <meta name="description" content="Personal notes and highlights from Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi.">
-    <link rel="canonical" href="https://rafaelmelchert88.github.io/notes/flow.html">
     <meta name="author" content="Rafael Melchert">
     <meta name="robots" content="index, follow">
-  
+    <link rel="canonical" href="https://rafaelmelchert88.github.io/notes/flow.html">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Rafael Melchert">
     <meta property="og:title" content="Notes on Flow">
@@ -18,71 +21,105 @@
     <meta property="og:image" content="https://rafaelmelchert88.github.io/assets/images/notes/flow-share.jpg">
     <meta property="og:image:alt" content="Notes on Flow by Mihaly Csikszentmihalyi">
 
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Notes on Flow">
     <meta name="twitter:description" content="Personal notes and highlights from Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi.">
     <meta name="twitter:image" content="https://rafaelmelchert88.github.io/assets/images/notes/flow-share.jpg">
+    <meta name="twitter:image:alt" content="Notes on Flow by Mihaly Csikszentmihalyi">
 
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Notes on Flow",
+        "description": "Personal notes and selected passages from Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi.",
+        "author": {
+          "@type": "Person",
+          "name": "Rafael Melchert"
+        },
+        "datePublished": "2025-12-20",
+        "dateModified": "2026-09-19",
+        "mainEntityOfPage": "https://rafaelmelchert88.github.io/notes/flow.html",
+        "image": "https://rafaelmelchert88.github.io/assets/images/notes/flow-share.jpg",
+        "about": {
+          "@type": "Book",
+          "name": "Flow: The Psychology of Optimal Experience",
+          "author": {
+            "@type": "Person",
+            "name": "Mihaly Csikszentmihalyi"
+          }
+        }
+      }
+    </script>
+
+    <!-- Icons -->
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" type="text/css">
-</head>
-<body>
+
+  </head>
+  <body>
     <header>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <div class="navbar-top">
-        <div class="title">
-          <a href="/">Rafael Melchert</a>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-top">
+          <div class="title">
+            <a href="/">Rafael Melchert</a>
+          </div>
+
+          <button
+            class="menu-icon"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span aria-hidden="true">&#9776;</span>
+          </button>
+
+          <div id="primary-navigation" class="links nav-links">
+            <a href="/about.html">About</a>
+            <a href="/values.html">Values</a>
+            <a href="/quotes.html">Quotes</a>
+            <a href="/notes.html">Notes</a>
+            <a href="/blog.html">Blog</a>
+          </div>
+          <!-- <div class="spacer"></div> -->
+          <div class="social-icons" aria-label="Social links">
+            <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.strava.com/athletes/79145788" target="_blank" rel="noopener noreferrer" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+            <a href="https://github.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <!-- <a href="https://www.twitter.com/rafaelmelchert" target="_blank" rel="noopener noreferrer sponsored" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+          </div>
         </div>
 
-        <button
-          class="menu-icon"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span aria-hidden="true">&#9776;</span>
-        </button>
-
-        <div id="primary-navigation" class="links nav-links">
-          <a href="/about.html">About</a>
-          <a href="/values.html">Values</a>
-          <a href="/quotes.html">Quotes</a>
-          <a href="/notes.html">Notes</a>
-          <a href="/blog.html">Blog</a>
+        <div class="navbar-bottom">
+          <!-- <div class="language-switcher">
+            <a href="/index.html">🇧🇷 PT</a> |
+            <a href="/index.en.html">🇬🇧 EN</a> |
+            <a href="/index.fr.html">🇫🇷 FR</a>
+          </div>
+          <div class="social-icons" aria-label="Social links">
+            <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.strava.com/athletes/79145788" target="_blank" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
+            <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div> -->
         </div>
-        <!-- <div class="spacer"></div> -->
-        <div class="social-icons" aria-label="Social links">
-          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.strava.com/athletes/79145788" target="_blank" rel="noopener noreferrer" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
-          <a href="https://github.com/rafaelmelchert88" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <!-- <a href="https://www.twitter.com/rafaelmelchert" target="_blank" rel="noopener noreferrer sponsored" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
-        </div>
-      </div>
-
-      <div class="navbar-bottom">
-        <!-- <div class="language-switcher">
-          <a href="/index.html">🇧🇷 PT</a> |
-          <a href="/index.en.html">🇬🇧 EN</a> |
-          <a href="/index.fr.html">🇫🇷 FR</a>
-        </div>
-        <div class="social-icons" aria-label="Social links">
-          <a href="https://www.instagram.com/rafaelmelchert88" target="_blank" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/rafaelmelchert88" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.strava.com/athletes/79145788" target="_blank" class="strava" aria-label="Strava"><i class="fab fa-strava"></i></a>
-          <a href="https://www.twitter.com/rafaelmelchert" target="_blank" class="twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-        </div> -->
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
     <div class="hero">
         <h1 class="page-title">Notes on Flow</h1>
     </div>
 
-    <div class="content">
+    <main>
+      <article class="content">
         <p class="back-link">
           <a href="/notes.html">← Back to Notes</a>
         </p>
@@ -150,8 +187,9 @@
           <iframe 
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/fXIeFJCqsPs"
+          src="https://www.youtube.com/embed/fXIeFJCqsPs?si=gRLAtCl31por7GnE"
           title="YouTube video player"
+          loading="lazy"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -166,8 +204,8 @@
             <li><a href="/notes/zen-mind-beginners-mind.html">Zen Mind, Beginner’s Mind</a></li>
           </ul>
         </nav>
-
-    </div>
+      </article>
+    </main>
 
     <div class="footer">
         &copy; <span id="year"></span> Rafael Melchert. All rights reserved.
@@ -204,32 +242,7 @@
         });
     </script>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Notes on Flow",
-        "description": "Personal notes and selected passages from Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi.",
-        "author": {
-          "@type": "Person",
-          "name": "Rafael Melchert"
-        },
-        "datePublished": "2025-12-20",
-        "dateModified": "2026-09-19",
-        "mainEntityOfPage": "https://rafaelmelchert88.github.io/notes/flow.html",
-        "image": "https://rafaelmelchert88.github.io/assets/images/notes/flow-share.jpg",
-        "about": {
-          "@type": "Book",
-          "name": "Flow: The Psychology of Optimal Experience",
-          "author": {
-            "@type": "Person",
-            "name": "Mihaly Csikszentmihalyi"
-          }
-        }
-      }
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
 
-</body>
+  </body>
 </html>
